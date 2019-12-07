@@ -1,7 +1,6 @@
 # 查看到进程占用的端口号
-2、	netstat -anp | grep pid
-	
-	
+1、	netstat -anp | grep pid
+
 2、查看8000端口的使用情况
 lsof -i:8000
 
@@ -19,15 +18,19 @@ lsof -i:8000
 
 4、查看当前所有tcp端口·
 
-netstat -ntlp  
+	netstat -ntlp  
 
-查看所有80端口使用情况
+	查看所有80端口使用情况
 
-netstat -ntulp |grep 80  
+	netstat -ntulp |grep 80  
 
 
 # 安装php
+
 1、rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
 2、yum provides php 升级
+
 3、yum install php72w php72w-fpm php72w-cli php72w-common php72w-devel php72w-gd php72w-pdo php72w-mysql php72w-mbstring php72w-bcmath 
+
 4、systemctl start php-fpm
